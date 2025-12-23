@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una Invitación Especial 💖</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="background-decorations">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+    </div>
+
+    <main class="app-container">
+        <!-- Vista 1: Invitación -->
+        <section id="view-invitation" class="card active">
+            <div class="card-content">
+                <span class="eyebrow">Hola ✨</span>
+                <h1>Tengo un mensaje especial para ti</h1>
+                <p>Me encantaría compartir un momento diferente y divertido contigo. ¿Aceptarías esta pequeña
+                    invitación?</p>
+                <div class="button-group">
+                    <button id="btn-aceptar" class="btn btn-primary">Aceptar</button>
+                    <button id="btn-no" class="btn btn-secondary">No</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vista 2: Agradecimiento -->
+        <section id="view-thanks" class="card hidden">
+            <div class="card-content">
+                <div class="icon-heart">💖</div>
+                <h1>¡Gracias por aceptar!</h1>
+                <p>¿Quieres perder dinero en Parchís? 🎮✨</p>
+                <button id="btn-continuar" class="btn btn-primary">¡Claro que sí!</button>
+            </div>
+        </section>
+
+        <!-- Vista 3: Confirmación -->
+        <section id="view-final" class="card hidden">
+            <div class="card-content">
+                <div class="icon-game">🎮💸</div>
+                <h1>Muy bien, perdamos dinero juntas</h1>
+                <p>Será un placer ganarte (o perder con elegancia). ¡Hablamos pronto! ✨</p>
+                <footer class="final-footer">Preparando los dados...</footer>
+            </div>
+        </section>
+    </main>
+
+    <script src="java.js"></script>
+</body>
+
+</html>
